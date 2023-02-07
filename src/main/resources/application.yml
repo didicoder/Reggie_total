@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    group:
+      "dev": devMysql,devRedis,devMP,devMvc
+    active: dev
+
+

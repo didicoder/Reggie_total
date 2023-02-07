@@ -1,0 +1,19 @@
+#mybatis-plus配置
+mybatis-plus:
+  type-aliases-package: reggie_version1.domain
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    default-enum-type-handler: org.apache.ibatis.type.EnumOrdinalTypeHandler
+  global-config:
+    db-config:
+      id-type: assign_id
+  type-enums-package:
+
+
+#mybatis分页插件的配置
+pagehelper:
+  #配置四項 hprs
+  helper-dialect: mysql  #分页助手方言：mysql
+  params: count=countSql  #为了支持 startPage(Object params) 方法
+  support-methods-arguments: true  #支持通过 Mapper 接口参数来传递分页参数，默认值 false
+  reasonable: true #分页合理化参数，默认值为 false,页码不为负，不超总页码

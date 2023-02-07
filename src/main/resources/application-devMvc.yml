@@ -1,0 +1,9 @@
+server:
+  port: 80
+
+
+#配置文件下载上传路径
+reggie:
+  path: D:\Tools\Languages\Code_Total\Reggie_total\reggie_version1\src\main\resources\images\
+
+

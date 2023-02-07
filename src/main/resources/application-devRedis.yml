@@ -1,0 +1,13 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+
+  #使用redis作为缓存
+  cache:
+    type: redis
+    redis:
+      use-key-prefix: true
+      cache-null-values: true
+      key-prefix: sms_
+      time-to-live: 60s
